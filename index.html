@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="vue.min.js"></script>
+    <title>Vue js</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- <br> {{id}}
+        <br> {{array[0]}}
+        <br> {{object.name}}
+        <br> {{func()}} -->
+        {{funck()}}
+    </div>
+</body>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            text: 'Assalomu aleykum',
+            // id: 12,
+            // array: ["tea", "coffe"],
+            // object: {
+            //     name: "Ali",
+            //     farst_name: "Vali"
+            // },
+            // func: () => {
+            //     return "Hello"
+            // }
+        },
+        methods: {
+            funck() {
+                return this.text
+            }
+        }
+    })
+</script>
+
+</html>
